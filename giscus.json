@@ -1,0 +1,9 @@
+{
+  "origins": [
+    "https://www.notion.so"
+  ],
+  "originsRegex": [
+    "https://[a-z0-9-]+\\.notion\\.site",
+    "https://[a-z0-9-]+\\.github\\.io"
+  ]
+}
