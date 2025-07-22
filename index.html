@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Guestbook</title>
+    <style>
+        body { margin: 0; }
+    </style>
 </head>
 <body>
+    <h1>CommentBox Guestbook</h1>
+    <p>방명록이 아래에 나타나야 합니다.</p>
+    
     <div class="commentbox"></div>
+
     <script src="https://commentbox.io/dist/commentBox.min.js"></script>
-    <script>commentBox('5687638417735680-proj');</script> <!-- 이 부분만 수정 -->
+    <script>
+        try {
+            // 이 곳에 본인의 프로젝트 ID를 정확하게 넣어주세요.
+            commentBox('5687638417735680-proj'); 
+        } catch (error) {
+            // 만약 에러가 발생하면 화면에 메시지를 표시합니다.
+            document.body.innerHTML += '<p style="color: red;">Error: ' + error.message + '</p>';
+        }
+    </script>
 </body>
 </html>
